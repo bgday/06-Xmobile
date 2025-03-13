@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>06 XMobile | Brian Day Dev</title>
+    <meta name="description" content="Brian Day's start file" />
+    <meta name="author" content="Brian Day" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet" />
+
+    <!--fav icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <img
+          src="./images/logo1x.png"
+          alt="logo"
+          width="50"
+          height="auto"
+          srcset="
+            ./images/logo1x.png 1x,
+            ./images/logo2x.png 2x,
+            ./images/logo3x.png 3x
+          "
+        />
+        <span>BD Games Archive</span>
+
+        <nav id="primaryNav">
+          <button id="navButton"></button>
+          <ul>
+            <li class="active">
+              <a href="#"><span class="activeSpan">Developers</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="inactiveSpan">Store</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="inactiveSpan">About Us</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="inactiveSpan">Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div id="navWrapper"></div>
+
+    <div id="mainWrapper">
+      <main>
+        <div class="introWrapper">
+          <div class="row">
+        <div class="column small-12 medium-5 large-5">
+          <img src="./images/blizzard.png" alt="blizzard logo">
+        </div>
+        <div class="column small-12 medium-7 large-7">
+        <p>Blizzard Entertainment has shaped the gaming world with legendary franchises like Warcraft, Starcraft, and Diablo. Whether you're a seasoned player or new to these iconic series, this guide will explore their rich histories, groundbreaking gameplay, and lasting impact on the gaming industry. From epic real-time strategy battles to dark action RPG adventures, learn what makes these games timeless classics and why they continue to captivate millions of players worldwide. Dive in and experience the worlds of Azeroth, the Koprulu Sector, and Sanctuary like never before!</p>
+      </div>
+      </div> <!--end row-->
+      </div>
+        <div class="rowWrapper bgblack">
+        <h2 class="franchise">Warcraft Franchise</h2>
+        <div class="row">
+          <div class="column small-12 medium-3 large-3">
+            <img src="./images/warcraft.webp" alt="warcraft 1" width="500" height="250">
+            <h2>Warcraft (1994)</h2>
+            <p>The RTS that started it all—command orcs or humans in a brutal war for dominance. Base-building, resource management, and strategic battles set the foundation for a legendary franchise.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+          <div class="column small-12 medium-3 large-3">
+            <img src="./images/warcraft2 copy.webp" alt="warcraft 2" width="500" height="250">
+            <h2>Warcraft II (1995)</h2>
+            <p>Bigger battles, naval warfare, and a gripping story expand the conflict between the Horde and the Alliance. Classic pixel art and addictive gameplay make this a must-play for strategy fans.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+          <div class="column small-12 medium-3 large-3">
+            <img src="./images/warcraft3.webp" alt="Warcraft 3" width="500" height="250">
+            <h2>Warcraft III (2002)</h2>
+            <p>Heroes rise, armies clash, and an unforgettable story unfolds. RPG elements, deep strategy, and legendary characters make this one of the most influential RTS games ever made.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+        </div><!--end row-->
+      </div>
+
+      <div class="rowWrapper" id="starcraft">
+        <h2 class="franchise">Starcraft Franchise</h2>
+        <div class="row">
+          <div class="column small-12 medium-5 large-5">
+            <img src="./images/starcraft.webp" alt="Starcraft" width="500" height="250">
+            <h2>Starcraft (1998)</h2>
+            <p>The ultimate RTS showdown—Terran, Zerg, and Protoss battle for galactic dominance. Master resource management, execute perfect strategies, and dominate in one of the most competitive games of all time.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+          <div class="column small-12 medium-5 large-5">
+            <img src="./images/starcraft2.webp" alt="Starcraft 2" width="500" height="250">
+            <h2>Starcraft 2 (2010)</h2>
+            <p>Refined, fast-paced, and endlessly rewarding. Whether you’re conquering the epic campaign or climbing the multiplayer ranks, Starcraft II is a test of strategy, skill, and speed.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+        </div> <!--end row-->
+        </div>
+
+        <div class="rowWrapper" id="diablo">
+          <h2 class="franchise">Diablo Franchise</h2>
+        <div class="row">
+          <div class="column small-12 medium-5 large-4">
+            <img src="./images/diablo.webp" alt="Diablo" width="500" height="250">
+            <h2>Diablo (1997)</h2>
+            <p>Step into the dark depths of Tristram’s cathedral and face the Lord of Terror. A moody, atmospheric dungeon crawler with endless loot and a gripping sense of dread.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+          <div class="column small-12 medium-5 large-4">
+            <img src="./images/diablo2.webp" alt="Diablo 2" width="500" height="250">
+            <h2>Diablo 2 (2000)</h2>
+            <p>A genre-defining masterpiece—deep character customization, randomized dungeons, and an addictive loot grind that keeps you coming back for "just one more run."</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+          <div class="column small-12 medium-5 large-4">
+            <img src="./images/diablo3.webp" alt="Diablo 3" width="500" height="250">
+            <h2>Diablo 3 (2012)</h2>
+            <p>Fast-paced combat, explosive abilities, and endless replayability. Slay demons with friends or solo, and chase the perfect build in this action-packed RPG.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+          <div class="column small-12 medium-5 large-4">
+            <img src="./images/diablo4.webp" alt="Diablo 4" width="500" height="250">
+            <h2>Diablo 4 (2023)</h2>
+            <p>Dark, brutal, and immersive—return to the gothic horror roots with an open world, deep customization, and visceral combat that makes every fight feel personal.</p>
+            <a href="#">Learn More</a>
+          </div><!--end column-->
+        </div> <!--end row-->
+        </div>
+      </main>
+    <div id="footerWrapper">
+      <footer>
+        <div>
+          <section class="social">
+            <a href="https://www.facebook.com"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="https://www.twitter.com"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="https://www.linkedin.com"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="https://www.youtube.com"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </section>
+        </div>
+        <p class="legal">&copy; <span id="year"></span> &bull; Brian Day</p>
+      </footer>
+    </div>
+
+    <script src="js/scripts.js" type="module"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+header {
+  padding: 2rem $gutter;
+  grid-template-columns: 50px auto auto;
+  h1 {
+    font-size: 2rem;
+    padding-top: 0.6rem;
+  }
+}
+
+#primaryNav {
+  button {
+    display: none;
+  }
+  ul,
+  #primaryNav ul.open {
+    display: inline-flex;
+
+    width: auto;
+    border: none;
+    box-shadow: none;
+    border-radius:none;
+    right:$gutter;
+    top:25px;
+    li a {
+      &:hover {
+        color:red;
+      }
+    }
+  }
+}
+
+#mainWrapper main {
+  .bgblack {
+    .column {
+      border:3px solid rgb(32, 13, 232);
+    }
+  }
+  #starcraft {
+    .column {
+      border: 3px solid rgb(216, 176, 75);
+    }
+  }
+
+.rowWrapper {
+  div.row {
+    padding: 3rem;
+    gap: 1.5rem;
+    border: 1px red solid;
+    .column {
+      border-radius: 10px;
+      overflow: hidden;
+      p,
+      a {
+        font-size: 1rem;
+        margin: 10px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 0.85rem;
+        margin:10px;
+      }
+    }}
+  }
+}
+
+// create for loop
+
+@for $i from 1 through 12 {
+  $width: calc($i/12) * 100%;
+  .medium-#{$i} {
+    flex-basis: $width;
+  }
+}

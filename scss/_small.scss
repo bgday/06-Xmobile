@@ -1,0 +1,250 @@
+/* prevent font size adjustments after orientation changes */
+html {
+  -moz-textsize-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/* apply natural box model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $secondaryColor;
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $fontColor;
+}
+
+//header
+
+#headerWrapper {
+  background-color: blue;
+  color: $secondaryColor;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50px auto 44px;
+  column-gap: $gutter;
+  align-items: center;
+  padding: 0.5rem $gutter;
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+// nav
+
+#primaryNav button::before {
+  content: "\2630";
+}
+
+#primaryNav {
+  button.open::before {
+    content: "X";
+  }
+  button {
+    border: none;
+    background: none;
+    color: $secondaryColor;
+    font-size: 2rem;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    font-weight: $boldWeight;
+    cursor: pointer;
+  }
+  button.open::before {
+    content: "\2715";
+  }
+  ul.open {
+    display: block;
+  }
+  ul {
+    position: absolute;
+    right: 25px;
+    width: 200px;
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+    text-align: right;
+    display: none;
+    overflow:hidden;
+    li a {
+      color: $primaryColor;
+      display: block;
+      padding: 0.75rem $gutter;
+      text-decoration: none;
+      span {
+        font-size: 1.1rem;
+      }
+    }
+    li.active a {
+      background-color: #ebebeb;
+    }
+  }
+}
+
+#navWrapper {
+  background-color: $secondaryColor;
+}
+
+// main
+main {
+  h1 {
+    display: block;
+  }
+  .introWrapper {
+    div.row {
+      .column {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+  .bgblack {
+    background-color: rgb(12, 0, 40);
+    color: greenyellow;
+    .column {
+      background-color: rgb(32, 13, 232);
+    }
+    h2 {
+      background-color: rgb(32, 13, 232);
+    }
+    a {
+      color: greenyellow;
+    }
+  }
+
+  #diablo {
+    color: rgb(188, 13, 13);
+    background-color: rgb(39, 39, 39);
+    h2 {
+      background-color: black;
+    }
+    a {
+      color: rgb(188, 13, 13);
+    }
+    .column {
+      background-color: black;
+
+    }
+  }
+
+  #starcraft {
+    background-color: rgb(32, 0, 105);
+    color: #0049af;
+    h2 {
+      background-color: rgb(216, 176, 75);
+    }
+    a {
+      color: #0049af;
+      font-size: 1.1rem;
+    }
+    .column {
+      background-color: rgb(216, 176, 75);
+      border:blue;
+    }
+  }
+  .rowWrapper {
+    h2.franchise {
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+    div.row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      div.column {
+        p,
+        h2,
+        a {
+          margin: 2.5rem;
+          display: block;
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  font-family: $headerFont;
+  background-color: $secondaryColor;
+  font-size: 1rem;
+  letter-spacing: 0.75px;
+  font-weight: 100;
+  transform: scaleY(1.2);
+}
+
+// create for loop
+
+@for $i from 1 through 12 {
+  $width: calc($i/12) * 100%;
+  .small-#{$i} {
+    flex-basis: $width;
+  }
+}
+
+// footer
+
+div#footerWrapper {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  footer {
+    padding: 2rem;
+    ion-icon {
+      padding-right: 12px;
+    }
+
+    section.social {
+      display: flex;
+      justify-content: center;
+      a {
+        color: $secondaryColor;
+        display: block;
+        font-size: 2rem;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        &:hover {
+          color: $accentColor;
+        }
+      }
+    }
+    p.legal {
+      font-weight: $boldWeight;
+      text-align: center;
+      font-size: 1.1rem;
+      color: $secondaryColor;
+    }
+  }
+}
