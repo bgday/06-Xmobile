@@ -442,14 +442,14 @@ main .bgblack a {
   color: greenyellow;
 }
 main #diablo {
-  color: rgb(188, 13, 13);
+  color: rgb(255, 138, 22);
   background-color: rgb(39, 39, 39);
 }
 main #diablo h2 {
   background-color: black;
 }
 main #diablo a {
-  color: rgb(188, 13, 13);
+  color: rgb(255, 138, 22);
 }
 main #diablo .column {
   background-color: black;
