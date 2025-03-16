@@ -456,13 +456,13 @@ main #diablo .column {
 }
 main #starcraft {
   background-color: rgb(32, 0, 105);
-  color: #0049af;
+  color: rgb(32, 0, 105);
 }
 main #starcraft h2 {
   background-color: rgb(216, 176, 75);
 }
 main #starcraft a {
-  color: #0049af;
+  color: rgb(32, 0, 105);
   font-size: 1.1rem;
 }
 main #starcraft .column {
